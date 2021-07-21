@@ -2,10 +2,10 @@ echo "${_group}Checking minimum requirements ..."
 
 MIN_DOCKER_VERSION='19.03.6'
 MIN_COMPOSE_VERSION='1.24.1'
-MIN_RAM_HARD=2048 # MB
+MIN_RAM_HARD=1024 # MB
 MIN_RAM_SOFT=7800 # MB
-MIN_CPU_HARD=2
-MIN_CPU_SOFT=4
+MIN_CPU_HARD=1
+MIN_CPU_SOFT=1
 
 DOCKER_VERSION=$(docker version --format '{{.Server.Version}}')
 COMPOSE_VERSION=$($dc --version | sed 's/docker-compose version \(.\{1,\}\),.*/\1/')
